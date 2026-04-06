@@ -1,89 +1,156 @@
-// ============================================
-// 💝 CUSTOMIZE YOUR VALENTINE'S WEBSITE HERE 💝
-// ============================================
+// ======================
+// BASIC INFORMATION
+// ======================
+birthdayName: "Tuti Asmiranti Sina"
+pageTitle: "Level Up Day 🎂✨"
 
-const CONFIG = {
-    // Your Valentine's name that will appear in the title
-    // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+// ======================
+// FLOATING BACKGROUND
+// ======================
+floatingEmojis: {
+    hearts: ['🎉', '🎂', '🎈', '🎁', '✨', '🥳'],
+    bears: ['🧸', '🎊', '💫']
+}
 
-    // The title that appears in the browser tab
-    // You can use emojis! 💝 💖 💗 💓 💞 💕
-    pageTitle: "Will You Be My Valentine? 💝",
-
-    // Floating emojis that appear in the background
-    // Find more emojis at: https://emojipedia.org
-    floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+// ======================
+// INTERACTIVE FLOW
+// ======================
+questions: {
+    first: {
+        text: "Hari ini ada yang ulang tahun ya...? 🎂",
+        yesBtn: "Iya 😎",
+        noBtn: "Bukan aku",
+        secretAnswer: "Gak bisa ngelak 😏 Happy Birthday! 🎉"
     },
-
-    // Questions and answers
-    // Customize each question and its possible responses
-    questions: {
-        first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
-        },
-        second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
-        },
-        third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
-        }
+    second: {
+        text: "Seberapa spesial hari ini buat kamu?",
+        startText: "Segini spesialnya ✨",
+        nextBtn: "Lanjut 🎈"
     },
-
-    // Love meter messages
-    // They show up depending on how far they slide the meter
-    loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
-    },
-
-    // Messages that appear after they say "Yes!"
-    celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
-    },
-
-    // Color scheme for the website
-    // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
-    colors: {
-        backgroundStart: "#ffafbd",      // Gradient start (try pastel colors for a soft look)
-        backgroundEnd: "#ffc3a0",        // Gradient end (should complement backgroundStart)
-        buttonBackground: "#ff6b6b",     // Button color (should stand out against the background)
-        buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
-        textColor: "#ff4757"             // Text color (make sure it's readable!)
-    },
-
-    // Animation settings
-    // Adjust these if you want faster/slower animations
-    animations: {
-        floatDuration: "15s",           // How long it takes hearts to float up (10-20s recommended)
-        floatDistance: "50px",          // How far hearts move sideways (30-70px recommended)
-        bounceSpeed: "0.5s",            // Speed of bouncing animations (0.3-0.7s recommended)
-        heartExplosionSize: 1.5         // Size of heart explosion effect (1.2-2.0 recommended)
-    },
-
-    // Background Music (Optional)
-    // Add your own music URL after getting proper licenses
-    music: {
-        enabled: true,                     // Music feature is enabled
-        autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3", // Music streaming URL
-        startText: "🎵 Play Music",        // Button text to start music
-        stopText: "🔇 Stop Music",         // Button text to stop music
-        volume: 0.5                        // Volume level (0.0 to 1.0)
+    third: {
+        text: "Udah siap untuk sesuatu yang aku siapin? 🎁",
+        yesBtn: "Siap banget!",
+        noBtn: "Tunggu dulu"
     }
-};
+}
 
-// Don't modify anything below this line unless you know what you're doing
-window.VALENTINE_CONFIG = CONFIG; 
+// ======================
+// EXCITEMENT METER
+// ======================
+loveMessages: {
+    extreme: "Ini bukan ulang tahun biasa... ini LEVEL UP 🚀🎉",
+    high: "Hari kamu lagi di puncak! 🥳🔥",
+    normal: "Masih awal... tapi bakal seru 🎈"
+}
+
+// ======================
+// FINAL CELEBRATION (INTI)
+// ======================
+celebration: {
+    title: "🎂 HAPPY LEVEL 22 🎉",
+    message: `
+Tuti Asmiranti Sina,
+
+Hari ini kamu genap 22 tahun.
+
+Bukan sekadar angka.
+Ini tentang semua hal yang sudah kamu lewati sampai titik ini.
+
+Mungkin gak semuanya mudah.
+Mungkin ada capek, ada ragu, ada momen pengen nyerah.
+
+Tapi kamu tetap jalan.
+
+Dan itu yang bikin hari ini layak dirayakan.
+
+22 bukan tentang jadi sempurna.
+Tapi tentang jadi lebih ngerti diri sendiri.
+Lebih kuat dari sebelumnya.
+Dan lebih siap untuk hal-hal besar yang belum datang.
+
+Semoga di umur ini:
+kamu lebih sering ketawa,
+lebih jarang overthinking,
+dan lebih banyak hal baik yang datang tanpa harus kamu kejar terlalu keras.
+
+Gak semua harus cepat.
+Gak semua harus langsung jadi.
+
+Yang penting kamu tetap bergerak.
+
+Karena jujur aja...
+sejauh ini, kamu udah hebat.
+
+Dan hari ini,
+kamu gak cuma nambah umur.
+
+Kamu naik level.
+
+🎮 +1 Level
+💫 +1 Chapter
+🔥 +1 Stronger Version of You
+
+Dan sebelum semuanya berlanjut...
+
+aku cuma mau kamu tetap di sini,
+tetap sama aku.
+
+Jaga hubungan ini baik-baik ya,
+kayak kita jaga satu sama lain sejauh ini.
+
+Kalau suatu saat aku lagi gak kuat,
+ingatkan aku.
+
+Kalau kamu lagi capek,
+aku juga akan ada.
+
+Jangan lupa doakan aku,
+seperti aku juga selalu bawa nama kamu dalam doa.
+
+Aku gak janji yang berlebihan,
+tapi satu hal yang pasti—
+
+aku serius sama kamu,
+dan aku pengen masa depan itu ada kamu di dalamnya.
+
+Sekarang...
+
+tarik napas sebentar...
+
+dan buka apa yang sudah aku siapin buat kamu 🎁
+    `,
+    emojis: "🎂🎉🥳🎁✨💫🎈🔥"
+}
+
+// ======================
+// VISUAL THEME (UPGRADED)
+// ======================
+colors: {
+    backgroundStart: "#1e3c72",      // dark blue
+    backgroundEnd: "#2a5298",        // deep gradient
+    buttonBackground: "#ff7a18",     
+    buttonHover: "#ffb347",          
+    textColor: "#ffffff"            
+}
+
+// ======================
+// ANIMATION SETTINGS
+// ======================
+animations: {
+    floatDuration: "10s",       
+    floatDistance: "80px",      
+    bounceSpeed: "0.35s",       
+    heartExplosionSize: 2.0     
+}
+
+// ======================
+// MUSIC SETTINGS
+// ======================
+music: {
+    enabled: true,
+    autoplay: true,
+    musicUrl: "https://res.cloudinary.com/dzmik97bn/video/upload/v1775492908/Jamrud_-_Selamat_Ulang_Tahun_lyrics_ve3mc0.mp4",
+    startText: "🎵 Putar Lagu",
+    stopText: "🔇 Matikan Lagu",
+    volume: 0.6
+}
